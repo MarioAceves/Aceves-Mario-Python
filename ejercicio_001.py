@@ -6,17 +6,19 @@ FechaNac = int(input('¿En que anio naciste? '))
 Mesyanio = input('¿En que mes y dia naciste? mm-dd ')
 anio_actual = 2022
 Edad = anio_actual - FechaNac
+Nombre_completo = Nombre + PrimerApellido + SdoApellido
 print("")
 
 #Obtener Vocales
-#def cont_vocal(frase):
-#    contador = 0
-#    for letra in frase:
-#        if letra.lower() in "aeiou":
-#        contador += 1
-#    return contador
+def cont_vocal(Nombre_completo):
+    contador = 0
+    for letra in Nombre_completo:
+        if letra.lower() in "aeiou":
+            contador += 1
+    return contador
 
-#imprimir valores
+total_voc= cont_vocal(Nombre_completo)
+
 #A
 print('Este es tu nombre en mayusculas: ',  Nombre.upper())
 #B
@@ -26,7 +28,7 @@ print('Tu fecha de nacimiento: ', Mesyanio, FechaNac )
 #D
 print('Esta es tu edad:', Edad )
 #E
-#print('Tu nombre completo tiene', vocales(Nombre) + vocales(PrimerApellido) + vocales(SdoApellido)  ,'vocales')
+print('Tu nombre completo tiene', total_voc  ,' vocales')
 #F
 print('Tu nombre completo tiene ', len(Nombre) + len(PrimerApellido) + len(SdoApellido),' Letras')
 #G
