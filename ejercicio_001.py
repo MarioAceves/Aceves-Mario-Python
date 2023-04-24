@@ -9,12 +9,12 @@ Edad = anio_actual - FechaNac
 print("")
 
 #Obtener Vocales
-def cont_vocal(frase):
-    contador = 0
-    for letra in frase:
-        if letra.lower() in "aeiou":
-        contador += 1
-    return contador
+#def cont_vocal(frase):
+#    contador = 0
+#    for letra in frase:
+#        if letra.lower() in "aeiou":
+#        contador += 1
+#    return contador
 
 #imprimir valores
 #A
