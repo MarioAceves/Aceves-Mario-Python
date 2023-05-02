@@ -32,9 +32,15 @@ print('Tu nombre completo tiene', total_voc  ,' vocales')
 #F
 print('Tu nombre completo tiene ', len(Nombre) + len(PrimerApellido) + len(SdoApellido),' Letras')
 #G
-#print('Tu edad es un caracter de tipo numero?')
+if type(FechaNac) == 'str':
+    print ('¿Tu edad es un carácter de tipo número? ','TRUE' ) 
+else:
+    print ('¿Tu edad es un carácter de tipo número? ','FALSE')
 #H
-#print('Tu nombre completo es un caracter de tipo alfanumerico? ')
+if type(Nombre_completo) == 'str':
+    print ('¿Tu nombre completo es un carácter de tipo alfanumérico? ','True' ) 
+else:
+    print ('¿Tu nombre completo es un carácter de tipo alfanumérico? ','false')
 #I
 print('Tu edad en 10 nios sera: ', Edad + 10)
 #J
