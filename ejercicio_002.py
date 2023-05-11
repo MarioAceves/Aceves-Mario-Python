@@ -2,13 +2,13 @@
 Nombre=input('Cual es su nombre? ')
 Sexo=input('Cual es su sexo (Hombre o Mujer)? ')
 
-if Nombre.lower() < "M":
-    if Sexo.lower() == "mujer":
+if Sexo.lower() == "mujer":
+    if Nombre.lower() < "m":
         print("Grupo A")
     else:
         print("Grupo B")
 else:
-    if Sexo.lower() == "hombre":
-        print("Grupo a")        
+    if Nombre.lower() > "n":
+        print("Grupo A")        
     else:
-        print("Grupo b")
+        print("Grupo B")
