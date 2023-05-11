@@ -1,17 +1,14 @@
 #Obtener nombre y sexo del usuario
-
 Nombre=input('Cual es su nombre? ')
 Sexo=input('Cual es su sexo (Hombre o Mujer)? ')
 
-if Nombre.upper() > "M":
-    if Sexo.upper == "MUJER":
-        grupo = "A"
+if Nombre.lower() < "M":
+    if Sexo.lower() == "mujer":
+        print("Grupo A")
     else:
-        grupo = "B"
+        print("Grupo B")
 else:
-    if Sexo.upper() == "HOMBRE":
-        grupo = "A"
+    if Sexo.lower() == "hombre":
+        print("Grupo a")        
     else:
-        grupo = "B"
-        
-print("Tu grupo es " + grupo)
+        print("Grupo b")
