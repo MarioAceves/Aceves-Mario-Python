@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+{% block header_title %}
+<header><b><h1>Datos del Estudiante</h1></b></header>
+{% endblock %}
+
+
+{% block content %}
+
+<body>
+    <h2>Datos Personales</h2>
+    <b>Nombre: </b><Font COLOR="blue">{{nombre}}</Font>
+    <br>
+    <b>Edad: </b><Font COLOR="blue">{{edad}}</Font>
+    <br>
+    <b>Sexo: </b><Font COLOR="blue">{{sexo}}</Font>
+    <br>
+    <br>
+    <h3>Estudios</h3>
+    <b>Licenciatura: </b><Font COLOR="green">{{estudios}}</Font>
+    <br>
+    <h3>Empleo</h3>
+    <b>Empresa: </b><Font COLOR="red">{{empleo}}</Font>
+</body>
+
+{% endblock %}
+
+</html>
