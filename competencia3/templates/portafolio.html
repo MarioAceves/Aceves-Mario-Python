@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+{% block header_title %}
+<header><b><h1>Curriculum Vitae</h1></b></header>
+{% endblock %}
+
+
+{% block content %}
+
+<body>
+    <h2><u>Datos Personales</u></h2>
+    <b>Nombre: </b></b><Font COLOR="blue">{{Nombres}}</Font>
+    <br>
+    <b>Apellido Paterno:</b></b><Font COLOR="blue">{{Primer_apelido}}</Font> 
+    <br>
+    <b>Apellido Materno: </b></b><Font COLOR="blue">{{Segundo_apellido}}</Font>
+    <br>
+    <b>Fecha de Nacimiento: </b></b><Font COLOR="blue">{{Fecha_nacimiento}}</Font>
+    <br>
+    <b>Edad: </b></b><Font COLOR="blue">{{Edad}}</Font>
+    <br>
+    <b>Numero Celular: </b></b><Font COLOR="blue">{{Celular}}</Font>
+    <br>
+    <b>Correo Electronico: </b></b><Font COLOR="blue">{{Correo}}</Font>
+    <br>
+    <b>Domicilio: </b></b><Font COLOR="blue">{{Domicilio}}</Font>
+    <br>
+    <b>Genero: </b></b><Font COLOR="blue">{{Genero}}</Font>
+    <br>
+    <b>Objetivos e intereses del puesto: </b></b><Font COLOR="blue">{{Objetivo}}</Font>
+    <br>
+    <b>Salario deseado: </b></b><Font COLOR="blue">{{Salario_esperado}}</Font>
+ 
+    <h2><u>Skills</u></h2>
+    <b><i>Habilidades:</i></b><br>
+    {% for valor in habilidades %}
+    {{valor}}<br>
+    {% endfor %}
+    <br>
+
+    <h2><u>Empleos</u></h2>
+    <b>Lugar de trabajo actual: </b></b><Font COLOR="blue">{{lugar_trabajo}}</Font>
+    <br>
+    <b>Año de ingreso: </b></b><Font COLOR="blue">{{anio_inicio}}</Font>
+    <br>
+    <b>Año de termino: </b></b><Font COLOR="blue">{{anio_fin}}</Font>
+    <br>
+    <b>Puesto: </b></b><Font COLOR="blue">{{puesto}}</Font>
+</body>
+
+{% endblock %}
+
+</html>
